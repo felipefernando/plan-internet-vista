@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 40%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -22,7 +23,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 186 100% 38%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -98,4 +99,29 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom Classes */
+.gradient-background {
+  @apply bg-gradient-to-br from-blue-500 to-blue-700;
+}
+
+.section-padding {
+  @apply py-12 md:py-20;
+}
+
+.plan-card {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.badge-popular {
+  @apply bg-yellow-400 text-yellow-800 px-2 py-1 rounded-full text-xs font-bold uppercase absolute right-4 top-4;
+}
+
+.feature-icon {
+  @apply bg-primary/10 p-2 rounded-full text-primary;
+}
+
+.testimonial-card {
+  @apply bg-white shadow-lg rounded-lg p-6 transition-all hover:shadow-xl;
 }
