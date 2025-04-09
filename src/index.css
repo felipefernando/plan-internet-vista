@@ -14,20 +14,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 262 40% 98%;
+    --primary: 162 83% 35%;
+    --primary-foreground: 162 40% 98%;
 
-    --secondary: 262 40% 96.1%;
+    --secondary: 162 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 262 40% 96.1%;
+    --muted: 162 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 130 100% 38%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 262 40% 98%;
+    --destructive-foreground: 162 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -38,28 +38,28 @@
 
   .dark {
     --background: 222.2 84% 4.9%;
-    --foreground: 262 40% 98%;
+    --foreground: 162 40% 98%;
 
     --card: 222.2 84% 4.9%;
-    --card-foreground: 262 40% 98%;
+    --card-foreground: 162 40% 98%;
 
     --popover: 222.2 84% 4.9%;
-    --popover-foreground: 262 40% 98%;
+    --popover-foreground: 162 40% 98%;
 
-    --primary: 262 40% 98%;
+    --primary: 162 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 262 40% 98%;
+    --secondary-foreground: 162 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
     --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 262 40% 98%;
+    --accent-foreground: 162 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 262 40% 98%;
+    --destructive-foreground: 162 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
@@ -79,7 +79,7 @@
 
 /* Custom Classes */
 .gradient-background {
-  @apply bg-gradient-to-br from-purple-600 to-indigo-700;
+  @apply bg-gradient-to-br from-teal-600 to-emerald-700;
 }
 
 .section-padding {
