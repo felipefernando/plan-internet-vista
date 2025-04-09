@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Check, ReactNode } from "lucide-react";
+import { Check } from "lucide-react";
+import { ReactNode } from "react";
 
 interface PlanCardProps {
   name: string;
