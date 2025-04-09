@@ -4,11 +4,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 interface TestimonialProps {
   name: string;
   role: string;
+  company: string;
   image?: string;
   testimonial: string;
 }
 
-const TestimonialCard = ({ name, role, image, testimonial }: TestimonialProps) => {
+const TestimonialCard = ({ name, role, company, image, testimonial }: TestimonialProps) => {
   return (
     <div className="testimonial-card">
       <div className="mb-4">
@@ -24,7 +25,7 @@ const TestimonialCard = ({ name, role, image, testimonial }: TestimonialProps) =
         </Avatar>
         <div>
           <h4 className="font-bold">{name}</h4>
-          <p className="text-sm text-gray-500">{role}</p>
+          <p className="text-sm text-gray-500">{role}, {company}</p>
         </div>
       </div>
     </div>
@@ -34,19 +35,22 @@ const TestimonialCard = ({ name, role, image, testimonial }: TestimonialProps) =
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Ana Silva",
-      role: "Profissional de Marketing",
-      testimonial: "Depois que mudei para a VelocNet, nunca mais tive problemas com reuniões online. A velocidade é excelente e o suporte sempre resolve qualquer problema rapidamente.",
+      name: "Carlos Oliveira",
+      role: "Gerente de Marketing",
+      company: "TechSolutions",
+      testimonial: "O ZettaBot revolucionou nossa forma de atender clientes. Conseguimos aumentar nossas vendas em 35% e reduzir o tempo de resposta em 80%.",
     },
     {
-      name: "Carlos Mendes",
-      role: "Gamer",
-      testimonial: "Como streamer, preciso de uma conexão estável e rápida. A VelocNet superou todas as minhas expectativas, sem quedas durante minhas lives.",
+      name: "Fernanda Lima",
+      role: "CEO",
+      company: "Beauty Shop",
+      testimonial: "Com o ZettaBot, conseguimos automatizar mais de 70% das perguntas frequentes. Nossos clientes estão mais satisfeitos e nossa equipe mais produtiva.",
     },
     {
-      name: "Mariana Costa",
-      role: "Estudante",
-      testimonial: "Assisto aulas online todos os dias e preciso de uma conexão confiável. Com a VelocNet, não perco nenhum conteúdo importante.",
+      name: "Ricardo Santos",
+      role: "Gerente Comercial",
+      company: "Auto Parts",
+      testimonial: "A facilidade de integrar o ZettaBot com nossos sistemas existentes foi incrível. Agora temos uma visão completa da jornada do cliente em um só lugar.",
     },
   ];
 
@@ -56,7 +60,7 @@ const Testimonials = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">O que nossos clientes dizem</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Milhares de usuários satisfeitos com nossos serviços de internet de alta velocidade.
+            Milhares de empresas já transformaram seu atendimento com o ZettaBot.
           </p>
         </div>
 

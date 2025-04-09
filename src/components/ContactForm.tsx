@@ -10,7 +10,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    cep: "",
+    company: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,7 +35,7 @@ const ContactForm = () => {
       name: "",
       email: "",
       phone: "",
-      cep: "",
+      company: "",
     });
   };
 
@@ -44,9 +44,9 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Quero contratar agora!</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto para transformar seu atendimento?</h2>
             <p className="opacity-90 max-w-xl mx-auto">
-              Preencha o formulário abaixo e nossa equipe entrará em contato para finalizar seu pedido.
+              Preencha o formulário abaixo e nossa equipe entrará em contato para uma demonstração gratuita.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ const ContactForm = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block mb-2">Telefone</label>
+                  <label htmlFor="phone" className="block mb-2">WhatsApp</label>
                   <Input
                     id="phone"
                     name="phone"
@@ -91,14 +91,14 @@ const ContactForm = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="cep" className="block mb-2">CEP</label>
+                  <label htmlFor="company" className="block mb-2">Empresa</label>
                   <Input
-                    id="cep"
-                    name="cep"
-                    value={formData.cep}
+                    id="company"
+                    name="company"
+                    value={formData.company}
                     onChange={handleChange}
                     className="bg-white/20 border-white/20 text-white"
-                    placeholder="00000-000"
+                    placeholder="Nome da sua empresa"
                     required
                   />
                 </div>
@@ -106,7 +106,7 @@ const ContactForm = () => {
               
               <div className="mt-8">
                 <Button type="submit" className="w-full text-primary bg-white hover:bg-gray-100">
-                  Solicitar contato
+                  Solicitar demonstração
                 </Button>
               </div>
             </form>

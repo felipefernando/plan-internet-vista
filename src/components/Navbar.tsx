@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { MessageSquare } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold text-primary">VelocNet</span>
+              <MessageSquare className="text-primary h-6 w-6 mr-2" />
+              <span className="text-2xl font-bold text-primary">ZettaBot</span>
             </a>
           </div>
 
@@ -21,7 +23,7 @@ const Navbar = () => {
               Planos
             </a>
             <a href="#features" className="text-gray-600 hover:text-primary">
-              Vantagens
+              Funcionalidades
             </a>
             <a href="#testimonials" className="text-gray-600 hover:text-primary">
               Depoimentos
@@ -29,7 +31,7 @@ const Navbar = () => {
             <a href="#contact" className="text-gray-600 hover:text-primary">
               Contato
             </a>
-            <Button>Assinar agora</Button>
+            <Button>Teste Grátis</Button>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -59,7 +61,7 @@ const Navbar = () => {
               Planos
             </a>
             <a href="#features" className="block text-gray-600 hover:text-primary">
-              Vantagens
+              Funcionalidades
             </a>
             <a href="#testimonials" className="block text-gray-600 hover:text-primary">
               Depoimentos
@@ -67,7 +69,7 @@ const Navbar = () => {
             <a href="#contact" className="block text-gray-600 hover:text-primary">
               Contato
             </a>
-            <Button className="w-full">Assinar agora</Button>
+            <Button className="w-full">Teste Grátis</Button>
           </div>
         )}
       </div>

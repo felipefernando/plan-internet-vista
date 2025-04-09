@@ -1,37 +1,37 @@
 
-import { Wifi, Shield, Clock, Zap, Headphones, Percent } from "lucide-react";
+import { MessageSquare, Users, Bot, Zap, Clock, Infinity } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: <Wifi className="h-8 w-8" />,
-      title: "Conexão estável",
-      description: "Tecnologia avançada para garantir estabilidade mesmo nos horários de pico"
+      icon: <Bot className="h-8 w-8" />,
+      title: "Chatbot Inteligente",
+      description: "Automatize respostas para perguntas frequentes e aumente a eficiência do atendimento"
     },
     {
-      icon: <Shield className="h-8 w-8" />,
-      title: "Segurança garantida",
-      description: "Proteção contra ataques cibernéticos e acesso não autorizado"
+      icon: <Users className="h-8 w-8" />,
+      title: "Multi-atendimento",
+      description: "Gerencie múltiplos atendimentos em uma única plataforma com organização em filas"
     },
     {
-      icon: <Clock className="h-8 w-8" />,
-      title: "Instalação rápida",
-      description: "Instalação profissional em até 48 horas após a aprovação"
+      icon: <MessageSquare className="h-8 w-8" />,
+      title: "Integração com WhatsApp",
+      description: "Conexão oficial com a API do WhatsApp Business para comunicação segura"
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: "Alta velocidade",
-      description: "Velocidades de download e upload superiores à média do mercado"
+      title: "Respostas rápidas",
+      description: "Crie templates de mensagens para agilizar seu atendimento"
     },
     {
-      icon: <Headphones className="h-8 w-8" />,
-      title: "Suporte 24/7",
-      description: "Equipe técnica disponível todos os dias, incluindo feriados"
+      icon: <Clock className="h-8 w-8" />,
+      title: "Agendamento de mensagens",
+      description: "Programe mensagens para seus clientes em datas e horários específicos"
     },
     {
-      icon: <Percent className="h-8 w-8" />,
-      title: "Sem fidelidade",
-      description: "Liberdade para escolher o melhor plano sem contratos longos"
+      icon: <Infinity className="h-8 w-8" />,
+      title: "Integrações",
+      description: "Conecte com diversas ferramentas como DialogFlow, N8N, Webhooks, Typebot e mais"
     }
   ];
 
@@ -39,9 +39,9 @@ const Features = () => {
     <section id="features" className="section-padding">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher a VelocNet?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher o ZettaBot?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Nossa empresa oferece internet de alta qualidade com a melhor tecnologia disponível no mercado.
+            Nossa plataforma oferece soluções completas para gerenciar sua comunicação via WhatsApp de forma profissional.
           </p>
         </div>
 
