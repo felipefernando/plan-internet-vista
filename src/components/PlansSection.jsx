@@ -1,6 +1,7 @@
 
 import PlanCard from "./PlanCard";
 import { Users, Phone, List, MessageSquare, FileCheck, BookUser, Tag, MessageCircle, Kanban, Share, Calendar, ExternalLink, BrainCircuit, Infinity } from "lucide-react";
+import "./PlansSection.css"; // We'll create this CSS file next
 
 const PlansSection = () => {
   const plans = [

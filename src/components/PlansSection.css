@@ -1,0 +1,17 @@
+
+.badge-popular {
+  position: absolute;
+  top: 12px;
+  right: -30px;
+  transform: rotate(45deg);
+  background-color: #0fa67d; /* Using the new primary color */
+  color: white;
+  padding: 4px 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.plan-card {
+  position: relative;
+  overflow: hidden;
+}
