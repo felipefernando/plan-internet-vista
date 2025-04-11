@@ -63,19 +63,19 @@ const PlanCard = ({
         <div className="flex flex-wrap gap-2 mb-3">
           <button 
             onClick={() => setBillingPeriod("monthly")}
-            className={`text-xs px-2 py-1 rounded ${billingPeriod === "monthly" ? 'bg-primary text-white' : 'bg-gray-100'}`}
+            className={`text-xs px-2 py-1 rounded-full ${billingPeriod === "monthly" ? 'bg-primary text-white' : 'bg-gray-100'}`}
           >
             Mensal
           </button>
           <button 
             onClick={() => setBillingPeriod("semestral")}
-            className={`text-xs px-2 py-1 rounded ${billingPeriod === "semestral" ? 'bg-primary text-white' : 'bg-gray-100'}`}
+            className={`text-xs px-2 py-1 rounded-full ${billingPeriod === "semestral" ? 'bg-primary text-white' : 'bg-gray-100'}`}
           >
             Semestral
           </button>
           <button 
             onClick={() => setBillingPeriod("annual")}
-            className={`text-xs px-2 py-1 rounded ${billingPeriod === "annual" ? 'bg-primary text-white' : 'bg-gray-100'}`}
+            className={`text-xs px-2 py-1 rounded-full ${billingPeriod === "annual" ? 'bg-primary text-white' : 'bg-gray-100'}`}
           >
             Anual
           </button>
